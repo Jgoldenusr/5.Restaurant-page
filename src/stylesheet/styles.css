@@ -1,0 +1,165 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: TenbyFive;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+}
+img,
+h1,
+h2,
+h3 {
+  user-select: none;
+}
+header {
+  margin: 15px auto;
+  font-size: 8vh;
+  font-weight: bold;
+  color: #fae04e;
+}
+.selection_panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  height: fit-content;
+  width: 45vw;
+  font-size: 5vh;
+}
+.button {
+  min-width: 30%;
+  border-color: #fae04e;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  text-align: center;
+  color: #fae04e;
+  transition: all 1s;
+}
+.button:hover {
+  cursor: pointer;
+  border-color: #fae04e;
+  color: black;
+  box-shadow: inset 15vw 0 0 #fae04e;
+}
+.main_container {
+  color: #fae04e;
+  margin: auto;
+  padding: 2rem 0px;
+  width: 45vw;
+}
+.cell_container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.cell1_container {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #fae04e;
+}
+.cellImgDiv {
+  margin-right: 3rem;
+}
+.cellImgDiv * {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cellTextDiv {
+  margin-right: 3rem;
+  text-align: center;
+}
+.cellImg {
+  width: 6vw;
+  height: 6vw;
+}
+.cellText {
+  font-size: 4vh;
+}
+.clear {
+  clear: both;
+}
+@font-face {
+  font-family: "TenbyFive";
+  src: url("../fonts/tenby-five-webfont.otf"),
+    url("../fonts/tenby-five-webfont.eot"),
+    url("../fonts/tenby-five-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tenby-five-webfont.woff2") format("woff2"),
+    url("../fonts/tenby-five-webfont.woff") format("woff"),
+    url("../fonts/tenby-five-webfont.ttf") format("truetype"),
+    url("../fonts/tenby-five-webfont.svg#TenbyFive") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media only screen and (max-width: 800px) {
+  header {
+    font-size: 5vh;
+  }
+  .selection_panel {
+    width: 95%;
+    font-size: 3vh;
+  }
+  .main_container {
+    width: 95%;
+  }
+  .cell_container {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cellImgDiv {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .cellText {
+    font-size: 3vh;
+  }
+  .cellImg {
+    width: 8vh;
+    height: 8vh;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 801px) {
+  header {
+    font-size: 5vh;
+  }
+  .selection_panel {
+    width: 95%;
+    font-size: 3vh;
+  }
+  .cell_container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cellImgDiv {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .cellText {
+    font-size: 3vh;
+  }
+  .cellImg {
+    width: 8vh;
+    height: 8vh;
+  }
+}
