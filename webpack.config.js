@@ -27,14 +27,14 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+        test: /\.(png|jpg|jpeg|gif|ico)$/i,
         type: "asset/resource",
         generator: {
           filename: "./imgs/[hash][ext][query]",
         },
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: "asset/resource",
         generator: {
           filename: "./fonts/[hash][ext][query]",

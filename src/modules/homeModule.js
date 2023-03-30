@@ -10,7 +10,7 @@ let infoArray = [info_01, info_02, info_03, info_04, info_05, info_06];
 let infoTextArray = [
   "En Panaderia Danny's disponemos de punto de venta para múltiples bancos",
   "También aceptamos pago por su monedero patria a través de Biopago",
-  "Le ofrecemos precios solidarios y atención de calidad",
+  "Le ofrecemos muchisimos precios solidarios y atención de calidad",
   "Delivery disponible a todas las zonas de Cumaná (excepto Brasil Sur)",
   "Disponemos de oportunidades para mayoristas y lavadores de dinero",
   'Encuéntrenos en Cantarra Sector 5, en frente de la canchita "Los Asnos"',
