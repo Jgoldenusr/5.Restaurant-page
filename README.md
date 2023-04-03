@@ -8,5 +8,6 @@ You can test the demo [here.](https://jgoldenusr.github.io/5.Restaurant-page/)
 
 ## Resources
 
+- [Font](https://www.dafont.com/tenby-five.font) (dafont)
 - [Favicon](https://icon-icons.com) (icon-icons)
 - [Images](https://www.flaticon.com) (flaticon)
